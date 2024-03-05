@@ -3,32 +3,22 @@
 //
 
 #include <stdio.h>
-void zadanie4()
-{
-    for(int i = 1; i <= 120; i++)
-    {
-        if (i % 5 == 0 &  i % 7 != 0)
-        {
+void zadanie4() {
+    for (int i = 1; i <= 120; i++) {
+        if (i % 5 == 0 & i % 7 != 0) {
             printf("Foo\n");
-        }
-        else if(i % 5 != 0 &  i % 7 == 0)
-        {
+        } else if (i % 5 != 0 & i % 7 == 0) {
             printf("Bar\n");
-        }
-        else if(i % 5 == 0 &  i % 7 == 0)
-        {
+        } else if (i % 5 == 0 & i % 7 == 0) {
             printf("FooBar\n");
-        }
-        else
-        {
+        } else {
             printf("%d \n", i);
         }
 
     }
-
+}
 int main()
 {
     zadanie4();
     return 0;
-}
 }
