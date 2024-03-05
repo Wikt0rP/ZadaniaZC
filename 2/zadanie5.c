@@ -1,4 +1,5 @@
-#include <libc.h>
+#include <stdio.h>
+#include <string.h>
 
 //
 // Created by Wiktor Prokopiszyn on 05/03/2024.
