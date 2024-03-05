@@ -23,13 +23,14 @@ void zadanie3Rect(Rectangle *a)
     //      |
     //      C---D
 
-    int dx = a->b.x - a->a.x;
+    /*int dx = a->b.x - a->a.x;
     int dy = a->b.y - a->a.y;
-    int lenght = sqrt(dx*dx+dy*dy);
-
+    //int lenght = sqrt(dx*dx+dy*dy); //sqrt nie działa na windows
     int dx2 = a->a.x - a->c.x;
     int dy2 = a->a.y - a->c.y;
-    int hight = sqrt(dx2*dx2+dy2*dy2);
+    int hight = sqrt(dx2*dx2+dy2*dy2); //sqrt nie działa na windows*/
+    int lenght = a->b.x - a->a.x;
+    int hight = a->a.y - a->c.y;
 
     printf("Pole: %d \n", lenght*hight);
     printf("Obw: %d\n", 2*lenght+2*hight);
