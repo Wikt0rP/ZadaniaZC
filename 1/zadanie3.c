@@ -3,18 +3,6 @@
 //
 
 #include <stdio.h>
-void zadanie3()
-{
-    int array[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-
-    for(int i = 0; i < 10; i++)
-    {
-        int wynik = 0;
-        wynik = Silnia(array[i]);
-        printf("Silnia z %d wynosi: %d \n",array[i], wynik);
-    }
-}
-
 int Silnia(int liczba)
 {
     int wynik = 1;
@@ -30,9 +18,20 @@ int Silnia(int liczba)
         }
         return wynik;
     }
+    return 0;
 }
 
+void zadanie3()
+{
+    int array[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
+    for(int i = 0; i < 10; i++)
+    {
+        int wynik = 0;
+        wynik = Silnia(array[i]);
+        printf("Silnia z %d wynosi: %d \n",array[i], wynik);
+    }
+}
 
 
 int main()
