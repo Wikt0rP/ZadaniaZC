@@ -3,6 +3,7 @@
 //
 
 #include <stdio.h>
+
 void zadanie4() {
     for (int i = 1; i <= 120; i++) {
         if (i % 5 == 0 & i % 7 != 0) {
